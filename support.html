@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support &#8211; Lucia</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f5f5f7;
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --accent: #ff6b00;
+      --border: #d2d2d7;
+      --max-width: 680px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #000000;
+        --surface: #1c1c1e;
+        --text: #f5f5f7;
+        --secondary: #98989d;
+        --border: #38383a;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 48px 24px 96px;
+    }
+    .container { max-width: var(--max-width); margin: 0 auto; }
+    header { margin-bottom: 48px; }
+    .app-label {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 17px;
+      color: var(--secondary);
+    }
+    .faq { margin-top: 48px; }
+    .faq h2 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .faq-item h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .faq-item p {
+      font-size: 15px;
+      color: var(--secondary);
+    }
+    .contact-box {
+      background: var(--surface);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 48px;
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+    .contact-box h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .contact-box p {
+      font-size: 15px;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+    .contact-box a.btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 12px 28px;
+      border-radius: 980px;
+      text-decoration: none;
+    }
+    .contact-box a.btn:hover { opacity: 0.88; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 72px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--secondary);
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="app-label">Lucia</span>
+      <h1>Support</h1>
+      <p class="subtitle">We're here to help. Check the FAQ below or send us an email.</p>
+    </header>
+
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>Where is my data stored?</h3>
+        <p>All your data &#8212; transactions, savings goals, spending limits &#8212; is stored locally on your device. It never leaves your phone or tablet, and we have no access to it.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I lost my data after reinstalling the app. Can I recover it?</h3>
+        <p>Because Lucia stores data only on your device, uninstalling the app removes your data. We recommend keeping iCloud Backup enabled in your iPhone settings so your device data (including app data) is backed up automatically.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I restore my lifetime purchase?</h3>
+        <p>Open Lucia, go to Settings, and tap "Restore Purchase." Your App Store account is used to verify the purchase &#8212; make sure you're signed into the same Apple ID you used to buy it.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I was charged but the purchase isn't unlocked.</h3>
+        <p>Try "Restore Purchase" first (Settings &#8594; Restore Purchase). If that doesn't work, please contact us with your Apple ID email and the approximate date of purchase and we'll help resolve it.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I request a refund?</h3>
+        <p>Refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID, and select the purchase to request a refund.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I use Lucia on multiple devices?</h3>
+        <p>Yes. The lifetime purchase is tied to your Apple ID and can be used on any device signed into that account. However, your financial data is stored locally per device &#8212; it doesn't sync between devices in this version of the app.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How do I delete my data?</h3>
+        <p>Your data is on your device. You can delete all data by uninstalling the app, or reset individual items from within the app's settings.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>I found a bug or have a feature request.</h3>
+        <p>We'd love to hear from you. Send us an email using the button below and we'll do our best to address it in an upcoming update.</p>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <h2>Still need help?</h2>
+      <p>Send us an email and we'll get back to you as soon as we can.</p>
+      <a class="btn" href="mailto:martinezjuansd@gmail.com">Email Support</a>
+    </div>
+
+    <footer>
+      <span>&#169; 2026 Lucia</span>
+      <span><a href="index.html">Privacy Policy</a></span>
+    </footer>
+  </div>
+</body>
+</html>
